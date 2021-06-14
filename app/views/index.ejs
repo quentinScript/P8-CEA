@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>sk-websocket-color</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript">
+      var socket = io.connect();
+    </script>
+
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="page-player">
+<!--    <div data-page="0" class="show"></div>-->
+ 
+    <div data-souspage="0" class="show">
+        <video autoplay preload loop src="video/intro.mp4"></video>
+        </div>
+    
+    <div data-souspage="1">
+        <video preload loop src="video/introHub.mp4"></video>
+        </div>
+    <div data-souspage="2">
+        <video preload loop src="video/introComposants.mp4"></video>
+        </div>
+    <div data-souspage="3">
+        <video preload loop src="video/introHistoire.mp4"></video>
+        
+        </div>
+    <div data-souspage="4" >
+        <video preload loop src="video/introReseaux.mp4"></video>
+        
+        </div>
+        
+    <div data-souspage="2G" class="">
+       <video preload loop src="video/2G.mp4"></video>
+        </div>
+    <div data-souspage="4G">
+       <video preload loop src="video/4G.mp4"></video>
+        
+        </div>
+    <div data-souspage="5G">
+       <video preload loop src="video/5G.mp4"></video>
+        </div>
+        
+    <div data-souspage="cloud">
+       <video preload src="video/cloud.mp4"></video>
+        </div>
+        
+    <div data-souspage="hub">
+       <video preload src="video/hub.mp4"></video>
+        </div>
+        
+    <div data-souspage="nfc">
+       <video preload src="video/nfc.mp4"></video>
+        
+        </div>
+    <div data-souspage="demain">
+       <video preload src="video/demain.mp4"></video>
+        </div>
+        
+         <div data-souspage="evolution" class="">
+       <video preload src="video/evolution.mp4"></video>
+        </div>
+        <div data-souspage="usages">
+       <video preload src="video/usages.mp4"></video>
+        </div>
+        
+        
+    <div data-composant="antenne"></div>
+    <div data-composant="filaire"></div>
+    <div data-composant="apu"></div>
+    <div data-composant="gyro"></div>
+    <div data-composant="switch"></div>
+    <div data-composant="capteur"></div>
+        
+      </div>
+    
+  </body>
+</html>

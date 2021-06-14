@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>sk-websocket-color</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript">
+      var socket = io.connect();
+    </script>
+
+    <script src="js/admin.js"></script>
+  </head>
+
+  <body id="page-admin" class="">
+      
+         <div data-phone="0" id="pageIcone" class="show">
+             <div class="saut"></div>
+      <div class="wrap">
+<!--
+      <div data-icone="0">
+
+        <div class="icone"></div>
+        <p>
+          Youtube
+        </p>
+    </div>
+      <div data-icone="1">
+        <div class="icone"></div>
+        <p>
+          Musique
+        </p>
+    </div>
+      <div data-icone="2">
+        <div class="icone"></div>
+        <p>
+          Nfc
+        </p>
+    </div>
+      <div data-icone="3">
+        <div class="icone"></div>
+        <p>
+          Message
+        </p>
+    </div>
+      <div data-icone="4">
+        <div class="icone"></div>
+        <p>
+          Photos
+        </p>
+    </div>
+      <div data-icone="5">
+        <div class="icone"></div>
+        <p>
+          Gps
+        </p>
+    </div>
+-->
+
+      </div>
+      </div>
+          <div data-phone="4"  class="">
+              <h1>Réseaux Mobiles</h1>
+              <h4>Data</h4>
+              <div class="data" style="background-color:#383333" class="row">
+                  <div data-donnee="2G">2G</div>
+                  <div data-donnee="4G">4G</div>
+                  <div data-donnee="5G">5G</div>
+                  </div>
+       
+                  <h4>Modem</h4>
+              <div id="categorieChoix">
+              
+                  
+              <div data-categorie="nfc">
+                  <div class="iconeCategorie"></div>
+                  <p>NFC</p>
+                  </div>
+                  
+                  <div data-categorie="wifi">
+                  <div class="iconeCategorie"></div>
+                  <p>Wifi</p>
+              </div>
+                  
+                   <div data-categorie="bluetooth">
+                  <div class="iconeCategorie"></div>
+                  <p>Bluetooth</p>
+                  </div>
+                  
+        </div>
+        </div>
+      <div data-phone="1" class="">
+          <h1>Un Hub Nomade</h1>
+              <div id="categorieChoix">
+              <div data-categorie="cloud">
+                  <div class="iconeCategorie"></div>
+                  <p>Le Cloud</p>
+              </div>
+                  
+              <div data-categorie="usages">
+                  <div class="iconeCategorie"></div>
+                  <p>Les Usages</p>
+                  </div>
+                  </div>
+      </div>
+      <div data-phone="3" class="">
+          <h1>Son Histoire</h1>
+              <div id="categorieChoix">
+              <div data-categorie="evolution">
+                  <div class="iconeCategorie"></div>
+                  <p>Evolution</p>
+              </div>
+              <div data-categorie="demain">
+                  <div class="iconeCategorie"></div>
+                  <p>Demain ?</p>
+                  </div>
+              <div data-categorie="cea">
+                  <div class="iconeCategorie"></div>
+                  <p>Le CEA</p>
+                  </div>
+              <div data-categorie="leti">
+                  <div class="iconeCategorie"></div>
+                  <p>Le Leti</p>
+                  </div>
+                  </div>
+      </div>
+      <div data-phone="2" class="">
+          <div class="parent">
+<div class="div1" data-compo="antenne"> </div>
+<div class="div2" data-compo="antenne"> </div>
+<div class="div3" data-compo="gyro"> </div>
+<div class="div4" data-compo="filaire"> </div>
+<div class="div5" data-compo="apu"> </div>
+<div class="div6" data-compo="switch"> </div>
+<div class="div7" data-compo="capteur"> </div>
+</div>
+      </div>
+      
+      
+
+  </body>
+</html>

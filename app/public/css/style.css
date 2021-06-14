@@ -1,0 +1,407 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  margin:0;
+}
+
+
+#page-player {
+  //background:#0019CC;
+  margin:0;
+}
+
+#player {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+
+  width:100px;
+  height:100px;
+  background:#F7CE4C;
+  border-radius:50%;
+}
+
+/* ========== */
+
+#page-admin {
+  
+  
+}
+
+#pageIcone{
+  //display:none;
+  //margin-top:50px;
+  //background:#EC4E3A;
+  background-image: url(../img/ecran.jpg);
+  background-size: contain;
+  background-position: center;
+  height:100vh;
+  background-repeat:no-repeat;
+}
+
+#gamepad {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+
+  text-align:center;
+  white-space:nowrap;
+}
+
+.button-direction {
+  width:100px;
+  height:100px;
+  background:#0019CC;
+  color:#F7CE4C;
+  border-radius:50%;
+  font-size:50px;
+  border:none;
+  outline:none;
+  line-height:100px;
+  text-align:center;
+}
+.button-direction:active {
+  background:#F7CE4C;
+  color:#0019CC;
+}
+
+
+
+
+[data-icone]{
+  height : 100px;
+}
+
+.icone,
+.iconeCategorie{
+  background-repeat:no-repeat;
+  background-size: contain;
+  width: 50px;
+  height : 50px;
+  border-radius: 20%;
+  //background-color: yellow;
+  margin: 0 auto;
+}
+
+.iconeCategorie{
+    margin: 20px;
+    width: calc(20vh - 70px);
+    height: calc(20vh - 70px);
+}
+
+
+p{
+  margin-top: 5px;;
+  color:white;
+  font-size: 10px;
+  text-align:center;
+}
+
+.wrap{
+  display:flex;
+  flex-wrap: wrap;
+}
+.wrap [data-icone]{
+  width: 25%;
+}
+
+[data-page],
+[data-phone],
+[data-souspage],
+[data-composant]
+{
+    background-repeat: no-repeat;
+    background-size: contain;
+  opacity:0;
+  position:fixed;
+  width: 100%;
+  min-height: 100vh;
+    background-color:#1F1C1C;
+  transition: ease .4s all;
+}
+
+
+[data-page].show,
+[data-phone].show,
+[data-souspage].show,
+[data-composant].show
+{
+  opacity:1;
+    z-index : 10000;
+}
+
+
+[data-page="0"],
+[data-souspage="0"]
+{
+   // background-image: url(../img/accueil.png);
+
+}
+[data-souspage="1"]{
+  //background-image: url(../img/histoire.png);
+}
+[data-page="1"],
+[data-souspage="2"]{
+   // background-image: url(../img/reseaux.png);
+
+}
+[data-page="3"],
+[data-souspage="3"]{
+      background-image: url(../img/hub.png);
+
+}
+[data-page="4"],
+[data-souspage="4"]{
+  background-color:grey;
+    background-image: url(../img/composant.jpg)
+}
+[data-page="5"],
+[data-souspage="5"]{
+  background-color:red
+}
+
+[data-composant="antenne"]{
+    background-image: url(../img/antenne.jpg) 
+}
+[data-composant="filaire"]{
+    background-image: url(../img/filaire.jpg) 
+}
+[data-composant="switch"]{
+    background-image: url(../img/switch.jpg) 
+}
+
+[data-composant="apu"]{
+    background-image: url(../img/apu.jpg) 
+}
+[data-composant="capteur"]{
+    background-image: url(../img/capteur.jpg) 
+}
+[data-composant="gyro"]{
+    background-image: url(../img/gyro.jpg) 
+}
+
+[data-categorie="2G"]{
+    background-image: url(../videos/2G.mp4) 
+}
+
+video{
+    width:100%;
+}
+
+.cache{
+  width:100%;
+  height: 100vh;
+  background-repeat:no-repeat;
+  background-size: contain;
+  position:absolute;
+  background-image: url(https://cdn.glitch.com/97dc613b-fd0f-4701-a84c-110007fa8125%2FSubtract.png?v=1617192268070);
+}
+
+[data-icone="0"] .icone{
+  background-image:url(https://cdn.glitch.com/97dc613b-fd0f-4701-a84c-110007fa8125%2FGroup%2062.jpg?v=1617264050529);
+}[data-icone="1"] .icone{
+  background-image:url(https://cdn.glitch.com/97dc613b-fd0f-4701-a84c-110007fa8125%2FGroup%2063.jpg?v=1617264050529);
+}[data-icone="2"] .icone{
+  background-image:url(https://cdn.glitch.com/97dc613b-fd0f-4701-a84c-110007fa8125%2FGroup%2068.jpg?v=1617264050529)
+}[data-icone="3"] .icone{
+  background-image:url(https://cdn.glitch.com/97dc613b-fd0f-4701-a84c-110007fa8125%2FGroup%2067.jpg?v=1617264050529)
+}[data-icone="4"] .icone{
+  background-image:url(https://cdn.glitch.com/97dc613b-fd0f-4701-a84c-110007fa8125%2FGroup%2070.jpg?v=1617264050837)
+}[data-icone="5"] .icone{
+  background-image:url(https://cdn.glitch.com/97dc613b-fd0f-4701-a84c-110007fa8125%2FGroup%2066.jpg?v=1617264488469)
+}[data-icone="6"] .icone{
+  background-image:url()
+}
+
+h1{
+    padding-left:20px;
+    font-size:31px;
+    color:#D7D5D5;
+}
+h4{
+    padding-left:20px;
+    font-weight: normal;
+    color: #8A8A8A;
+    font-size: 20px;
+    margin-bottom: 2px;;
+}
+.saut{
+    height:10vh;
+}
+
+#categorieChoix{
+  //  margin: 0 20px 0 20px;
+  //height: 100vh;
+}
+
+[data-categorie]{
+  width: 100%;
+  height: calc(20vh - 30px);
+    
+ // margin : 0  auto 20px auto;
+  //border-radius: 10px;;
+  background-color:#383333;
+  color: white;
+  text-align:center;
+border-top: 1px solid #6C6C6C;
+border-bottom: 1px solid #6C6C6C;
+    display:flex;
+    transition: all ease .3s;
+}
+
+[data-categorie] p{
+    transition: all ease .3s;
+    
+}
+
+[data-categorie].show{
+    background-color:#DFD9D9;
+    
+}
+
+[data-categorie].show p{
+    color: #6C6C6C;
+}
+
+
+#categorieChoix .iconeCategorie{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-image:url(https://cdn.glitch.com/97dc613b-fd0f-4701-a84c-110007fa8125%2FGroup%2066.jpg?v=1617264488469);
+}
+
+/*   LES RESEAUX MOBILES */
+
+[data-categorie="wifi"] .iconeCategorie{
+    background-image: url(../img/wifi.png) !important;
+}
+[data-categorie="2G"] .iconeCategorie{
+    background-image: url(../img/2G.jpg) !important;
+}
+[data-categorie="4G"] .iconeCategorie{
+    background-image: url(../img/4G.jpg) !important;
+}
+[data-categorie="5G"] .iconeCategorie{
+    background-image: url(../img/5G.jpg) !important;
+}
+[data-categorie="nfc"] .iconeCategorie{
+    background-image: url(../img/nfc.png) !important;
+}
+
+[data-categorie="bluetooth"] .iconeCategorie{
+    background-image: url(../img/bluetooth.png) !important;
+}
+
+[data-categorie="gps"] .iconeCategorie{
+    background-image: url(../img/gps.png) !important;
+}
+
+[data-categorie="cloud"] .iconeCategorie{
+    background-image: url(../img/cloud.png) !important;
+}
+
+[data-categorie="evolution"] .iconeCategorie{
+    background-image: url(../img/evolution.png) !important;
+}
+
+[data-categorie="demain"] .iconeCategorie{
+    background-image: url(../img/demain.png) !important;
+}
+
+[data-categorie="usages"] .iconeCategorie{
+    background-image: url(../img/usages.png) !important;
+}
+
+
+[data-categorie="cea"] .iconeCategorie{
+    background-image: url(../img/cea.png) !important;
+}
+
+[data-categorie="leti"] .iconeCategorie{
+    background-image: url(../img/leti.png) !important;
+}
+
+/*   RÉSEAUX */
+
+[data-categorie="9"] .iconeCategorie{
+    background-image: url(../img/bluetooth.png) !important;
+}
+[data-categorie="10"] .iconeCategorie{
+    background-image: url(../img/gps.png) !important;
+}
+[data-categorie="11"] .iconeCategorie{
+    background-image: url(../img/nfc.png) !important;
+}
+[data-categorie="12"] .iconeCategorie{
+    background-image: url(../img/cloud.png) !important;
+}
+
+[data-donnee]{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(20vh - 70px);
+    height: calc(20vh - 70px);
+    border-radius: 20%;
+    //background-color: yellow;
+    margin: 20px; auto;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #91BBE1;
+    padding-top:0px;
+    font-size:30px;
+    line-height: 80px;
+}
+
+[data-donnee].show{
+    background-color: aliceblue;
+    color:#91BBE1;
+}
+
+
+/*   LES CAPTEURS */
+
+/*   LA PLACE DU LETI */
+
+
+#categorieChoix p{
+    margin-top: 5vh;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.data{
+    width: 100%;
+    height: calc(20vh - 30px);
+    // margin: 0 auto 20px auto;
+    //border-radius: 10px;
+    background-color: #383333;
+    color: white;
+    text-align: center;
+    border-top: 1px solid #6C6C6C;
+    border-bottom: 1px solid #6C6C6C;
+    display: flex;
+    transition: all ease .3s;
+}
+
+
+.parent {
+display: grid;
+    height: 100vh;
+    width:100%;
+grid-template-columns: .7fr repeat(2, 1fr) 2fr;
+grid-template-rows: repeat(4, 1fr) .7fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    background-image:url(../img/tel3.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div1 { grid-area: 1 / 1 / 6 / 2; }
+.div2 { grid-area: 5 / 1 / 6 / 5; }
+.div3 { grid-area: 1 / 2 / 1 / 4; }
+.div4 { grid-area: 2 / 4 / 5 / 5; }
+.div5 { grid-area: 1 / 4 / 2 / 5; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+.div7 { grid-area: 4 / 3 / 5 / 4; }
